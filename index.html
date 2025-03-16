@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이어 뉴스</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 15px; }
+        
+        /* Header */
+        header { background: #1a4b8c; color: white; padding: 1rem 0; }
+        .header-top { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 2rem; font-weight: bold; }
+        .nav-menu { display: flex; gap: 1rem; }
+        .nav-menu a { color: white; text-decoration: none; transition: color 0.3s; }
+        .nav-menu a:hover { color: #a8c6f0; }
+        
+        /* Article Content */
+        .article-header { margin: 2rem 0; }
+        .article-category { color: #1a4b8c; font-size: 0.9rem; font-weight: bold; }
+        .article-title { font-size: 2.5rem; margin: 1rem 0; color: #0d2b50; }
+        .article-meta { color: #4a78b3; font-size: 0.9rem; margin-bottom: 1rem; }
+        .article-image { 
+            width: 100%;
+            max-width: 500px; /* 최대 너비 설정 */
+            height: auto;
+            margin: 1rem auto; /* 중앙 정렬을 위해 auto 마진 추가 */
+            border-radius: 8px;
+            display: block; /* 중앙 정렬을 위해 필요 */
+        }
+        .article-content { font-size: 1.1rem; line-height: 1.8; color: #333; }
+        .article-content p { margin-bottom: 1.5rem; }
+
+        .article-figure {
+            margin: 2rem auto;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .image-caption {
+            margin-top: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        /* Footer */
+        footer { background: #1a4b8c; color: white; padding: 2rem 0; margin-top: 2rem; }
+
+        /* Links */
+        a { color: #1a4b8c; text-decoration: none; }
+        a:hover { color: #4a78b3; }
+
+        /* Reporter Info */
+        .reporter-info {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .reporter-image {
+            width: 100px;  /* 크기 줄임 */
+            height: 100px; /* 크기 줄임 */
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .reporter-info div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">하이어 뉴스</div>
+                <nav class="nav-menu">
+                    <a href="index.html">홈</a>
+                    <a href="#">정치</a>
+                    <a href="#">경제</a>
+                    <a href="#">사회</a>
+                    <a href="#">문화</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <div class="article-header">
+                <div class="article-category">사회</div>
+                <h1 class="article-title">"병원 의사·간호사, 불법 약물 제조·유통… 부작용 피해 속출"</h1>
+                <div class="article-meta">
+                    <div class="reporter-info">
+                        <img src="images/reporter.jpg" alt="조성민 기자" class="reporter-image">
+                        <div>
+                            <span>작성자: 조성민</span>
+                            <time>2025년 2월 25일 10:30</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <figure class="article-figure">
+                <img src="images/your-image.jpg" alt="기사 대표 이미지" class="article-image">
+                <figcaption class="image-caption">지난 8일 경찰이 압수한 불법 제조 약물. 사진=하이어뉴스</figcaption>
+            </figure>
+            
+            <div class="article-content">
+                <p>불법 약물을 제조·유통한 혐의로 검거된 2인조 일당이 한국대병원 소속 의사와 간호사인 것으로 드러나 충격을 주고 있다.</p>
+                
+                <p>경찰에 따르면, 한국대병원에서 근무하던 의사 A씨와 간호사 B씨는 병원에서 약물을 빼돌려 불법 제조한 뒤, 일정 금액을 받고 판매한 혐의를 받고 있다. 해당 약물을 섭취하면 웃음이 나오는 효과가 있는 것으로 알려졌으나, 최근 부작용을 호소하는 피해자가 속출하면서 논란이 커지고 있다.</p>
+                
+                <p>특히 일부 피해자들은 약물을 복용한 뒤 심각한 건강 이상을 겪어 병원을 찾고 있는 것으로 전해졌다. 경찰 조사에서 피의자들은 한국대병원에서 약물을 빼돌려 제조했다고 진술했지만, 병원 측은 "해당 사실을 전혀 인지하지 못했다"며 선을 그었다.</p>
+                
+                <p>경찰은 추가 공범 여부와 유통 경로를 조사하는 한편, 피해 규모를 파악하는 데 수사를 집중하고 있다.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 하이어 뉴스. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
